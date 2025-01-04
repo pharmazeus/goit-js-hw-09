@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>form</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google fonts end-->
+    <script type="module" crossorigin src="/vanilla-app-template/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/2-form-BGPyjT-n.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/reset-B9kkWxtF.css">
+  </head>
+  <body>
+    <div class="container">
+      <button
+        type="button"
+        class="return-btn"
+        onclick="location.href='./index.html'"
+      >
+        Return
+      </button>
+
+      <form class="feedback-form js-feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
