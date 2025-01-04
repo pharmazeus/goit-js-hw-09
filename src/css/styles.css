@@ -1,18 +1,78 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+/* COMMON */
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+.gallery-container {
+  max-width: 1128px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 24px;
+}
+.gallery-section {
+  padding-left: 156px;
+  padding-right: 156px;
+  max-width: 1440px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-item {
+  background-color: #ffffff;
+  width: calc((100% - 48px) / 3);
+  overflow: hidden;
+  border-radius: 6px;
+}
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
+/* Загальні стилі для сторінки */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.return-btn {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.99;
+  letter-spacing: 0.09em;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 8px 8px;
+  width: 280px;
+}
+
+.return-btn:hover {
+  background-color: #6c8cff;
+}
+
+.main-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
+  border: 2px solid blue;
+  padding: 10px;
+  background-color: #4e75ff;
+}
