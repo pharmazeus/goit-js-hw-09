@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homework 9</title>
+    <style>
+      /* style for links as buttons */
+      .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 50px;
+        margin-left: 50px;
+      }
+
+      .button-link:hover {
+        background-color: #0056b3;
+      }
+    </style>
     <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-Dk4VTV-5.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/reset-B9kkWxtF.css">
   </head>
@@ -16,20 +36,8 @@
       </h1>
       <div class="main-container">
         <div class="gallery-container">
-          <button
-            type="button"
-            class="return-btn"
-            onclick="location.href='./1-gallery.html'"
-          >
-            Watch gallery
-          </button>
-          <button
-            type="button"
-            class="return-btn"
-            onclick="location.href='./2-form.html'"
-          >
-            Watch form
-          </button>
+          <a href="./1-gallery.html" class="button-link">Watch gallery</a>
+          <a href="./2-form.html" class="button-link">Watch form</a>
           <ul class="gallery-list js-gallery-list"></ul>
         </div>
       </div>
