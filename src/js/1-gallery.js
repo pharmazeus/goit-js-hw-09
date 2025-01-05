@@ -98,4 +98,3 @@ new SimpleLightbox('.js-gallery-list a', {
   captionsData: 'alt',
   captionsDelay: 250,
 });
-got;

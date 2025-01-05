@@ -34,10 +34,10 @@ const fillFormFields = () => {
 //call the function to get data from LS
 fillFormFields();
 //set changes to LS
-const onFormFieldChange = event => {
+const onFormFieldInput = event => {
   const { target: formElement } = event;
-  let fieldValue = formElement.value;
-  let fieldName = formElement.name;
+  const fieldValue = formElement.value;
+  const fieldName = formElement.name;
   formData[fieldName] = fieldValue;
 
   saveToLocalStorage('feedback-form-state', formData);
@@ -46,15 +46,21 @@ const onFormFieldChange = event => {
 //submit form and reset it
 const onFormSubmit = event => {
   event.preventDefault();
+
   const { currentTarget: formEl } = event;
   //check if fields are filled
   if (!formData.email.trim() || !formData.message.trim()) {
     alert('Fill please all fields');
     return;
   }
+  console.log('Submitted Data:', formData);
+
   formEl.reset();
+
+  formData = { email: '', message: '' }; // Clear formData
+
   removeFromLocalStorage('feedback-form-state');
 };
 //handlers for form
-feedbackForm.addEventListener('change', onFormFieldChange);
+feedbackForm.addEventListener('input', onFormFieldInput);
 feedbackForm.addEventListener('submit', onFormSubmit);
